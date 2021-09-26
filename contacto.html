@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Normalize/normalize.css">
+    <link rel="stylesheet" href="Styles/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contacto</title>
 </head>
+
 <body>
-    
+    <div class="header">
+        <header class="body__header">
+            <div class="header__socialNIcons">
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/?hl=es" class="fa fa-instagram"></a>
+            </div>
+            <div class="header__menu">
+                <nav class="header__nav__menu">
+                    <ul class="header__nav__menu__items">
+                        <li class="header__nav__menu--item"><a href="index.html">Home</a></li>
+                        <li class="header__nav__menu--item"><a href="nosotros.html">Nosotros</a></li>
+                        <li class="header__nav__menu--item"><a href="servicios.html">Servicios</a></li>
+                        <li class="header__nav__menu--item"><a href="galeria.html">Galeria</a></li>
+                        <li class="header__nav__menu--item"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header__logo">
+                <img src="Logo" alt="000">
+            </div>
+        </header>
+    </div>
+    <main class="body__grid">
+        <div class="middle">
+            <article class="middle__article">
+                <div class="article__form">
+                    <div class="article__form__container">
+                        <h2 class="article__form--title">
+                            Déjanos un mensaje! Pronto nos comunicaremos contigo
+                        </h2>
+                        <form target="_self" method="POST" autocomplete="on">
+
+                                <!--Bloque principal-->
+                            <label for="nombre">Nombres</label>
+                            <input type="text" name="nombre" id="nombre" class="article__form--boxes" size="50">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" id="apellidos" class="article__form--boxes" size="50">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="article__form--boxes" size="50">
+                            <label for="telefono">Celular</label>
+                            <input type="tel" name="telefono" id="telefono" class="article__form--boxes" maxlength="10" size="11">
+                            <label for="mensaje">Deja aquí tu mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe algo..."> </textarea>
+                            <input type="submit" value="Enviar" name="submit" class="article__form--button">
+                            <input type="reset" value="Limpiar" name="reset" class="article__form--button">
+                        </form>  
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="right">
+            <aside class="right__aside">
+                <img src="#" alt="000" class="aside__img">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident modi vero ipsa quas harum
+                    voluptates itaque eaque libero reprehenderit adipisci nostrum, quaerat dignissimos, laudantium
+                    aperiam vel fugiat facilis cupiditate iste!
+                </p>
+            </aside>
+        </div>
+    </main>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>
+                Made by Juan Pablo Cano
+            </p>
+        </footer>
+    </div>
 </body>
+
 </html>
