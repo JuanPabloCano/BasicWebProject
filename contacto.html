@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="Normalize/normalize.css">
     <link rel="stylesheet" href="Styles/main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,29 +14,42 @@
 </head>
 
 <body>
-    <div class="header">
-        <header class="body__header">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand">
+                    <img src="https://cdn3.iconfinder.com/data/icons/rage-room-astute-vol-2/512/Rage_Room-512.png" width="80">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
             <div class="header__socialNIcons">
                 <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
                 <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
                 <a href="https://www.instagram.com/?hl=es" class="fa fa-instagram"></a>
             </div>
-            <div class="header__menu">
-                <nav class="header__nav__menu">
-                    <ul class="header__nav__menu__items">
-                        <li class="header__nav__menu--item"><a href="index.html">Home</a></li>
-                        <li class="header__nav__menu--item"><a href="nosotros.html">Nosotros</a></li>
-                        <li class="header__nav__menu--item"><a href="servicios.html">Servicios</a></li>
-                        <li class="header__nav__menu--item"><a href="galeria.html">Galeria</a></li>
-                        <li class="header__nav__menu--item"><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="header__logo">
-                <img src="Logo" alt="000">
-            </div>
-        </header>
-    </div>
+        </nav>
+    </header>
     <main class="body__grid">
         <div class="middle">
             <article class="middle__article">
@@ -45,7 +60,7 @@
                         </h2>
                         <form target="_self" method="POST" autocomplete="on">
 
-                                <!--Bloque principal-->
+                            <!--Bloque principal-->
                             <label for="nombre">Nombres</label>
                             <input type="text" name="nombre" id="nombre" class="article__form--boxes" size="50">
                             <label for="apellidos">Apellidos</label>
@@ -53,12 +68,14 @@
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" class="article__form--boxes" size="50">
                             <label for="telefono">Celular</label>
-                            <input type="tel" name="telefono" id="telefono" class="article__form--boxes" maxlength="10" size="11">
+                            <input type="tel" name="telefono" id="telefono" class="article__form--boxes" maxlength="10"
+                                size="11">
                             <label for="mensaje">Deja aquí tu mensaje</label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe algo..."> </textarea>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                                placeholder="Escribe algo..."> </textarea>
                             <input type="submit" value="Enviar" name="submit" class="article__form--button">
                             <input type="reset" value="Limpiar" name="reset" class="article__form--button">
-                        </form>  
+                        </form>
                     </div>
                 </div>
             </article>
@@ -82,6 +99,9 @@
             </p>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

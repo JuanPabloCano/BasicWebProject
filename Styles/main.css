@@ -16,10 +16,11 @@ body {
 .body__grid {
     display: grid;
     grid-template-areas: 
-    'header header header header header' 
-    'middle middle middle middle right' 
-    'footer footer footer footer footer';
+    'header header header header' 
+    'middle middle middle right' 
+    'footer footer footer footer';
     border: black solid;
+    margin: 1rem;
 } 
 
 .header {
@@ -57,7 +58,6 @@ body {
     font-size:2.5rem;
     text-align: center;
     background-color: whitesmoke;
-    margin: 0% 12% 10% 53%;
     border-radius: 0.625rem;
     font-family: 'Vampiro One', cursive;
 
@@ -65,7 +65,7 @@ body {
 .article__text__main--title{
     color: black;
     font-size: 2.1875rem;
-    font-family: 'Bangers', cursive;    text-align: center;
+    font-family: 'Bangers', cursive; text-align: center;
 }
 .article__text__secondary--title{
     color:black;
@@ -73,9 +73,10 @@ body {
     font-family: 'Bangers', cursive;
 }
 
-/* Estilos para redes sociales */
-.header__socialNIcons{
-    float: right;
+/* Estilo para las imágenes */
+
+.main__title--img{
+    margin-bottom: 2rem;
 }
 
 
@@ -84,32 +85,52 @@ p{
     font-family: 'Spectral', serif; color:black;
 }
 
-.header__menu{
-    background-color: black;
+/* Estilo para el menu */
+
+.container{
+    margin: 0.938rem;
+    font-family: 'Bangers', cursive;
 }
-.header__nav__menu li, a{
-    background: whitesmoke;
-    width: 10%;
-    border: 0.125rem black;
-    border-radius: 0.125rem 0.125rem 0.125rem 0.125rem;
+
+.navbar-brand{
+    background-color: slategray;
+    border-radius: 1rem;
+    font-size: 0rem;
+    margin-right: 0rem;
+}
+
+#navbarNav{
+    justify-content: center;
+}
+
+.navbar-nav{
     align-items: center;
 }
-.header__nav__menu--item{
-    font-size: medium;
-    color: black;
+
+.nav-item{
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+.nav-item:hover{
+    box-shadow: 0.1875rem 0.1875rem 0.3125rem black;
+    background-color:steelblue;
 }
 
 /* Estilos para los íconos de redes sociales */
+
+.header__socialNIcons{
+    display: contents;
+}
 .fa {
-    display: table-caption;
     padding: 0.625rem;
     font-size: 2.8125rem;
     width: 1.5625rem;
     text-align: center;
     text-decoration: none;
-    margin: 0.1875rem 0.0625rem ;
+    margin: 0.313rem 0.313rem ;
     border-radius: 40%;
-    align-items: flex-end;
 }
 
 .fa:hover {
@@ -128,6 +149,11 @@ p{
     color: white;
 }
 
+/* Estilo lado derecho */
+
+.right__aside{
+    width: 32rem;
+}
 
 /* Estilo para los formularios */
 
@@ -178,6 +204,15 @@ p{
     color: black;
 }
 
+.article__text--cvBox{
+    border: black solid; border-radius: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Spectral', serif; color:black; font-size: 1.1rem;
+
+
+
+}
 
 /* Estilo para la tabla */
 
