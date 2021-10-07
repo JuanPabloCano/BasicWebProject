@@ -79,7 +79,11 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Estilo para los textos */
 
+.middle__article--textDesign{
+    text-align: justify;
+}
 p{
     font-size: 1.25rem;
     font-family: 'Spectral', serif; color:black;
