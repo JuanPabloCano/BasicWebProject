@@ -1,0 +1,16 @@
+/* Estilo para las imágenes */
+
+.main__title--img{
+    margin-bottom: 2rem;
+}
+
+/* Estilo para los textos */
+
+.middle__article--textDesign{
+    text-align: justify;
+
+    p {
+        font-size: $estilo__fuente--size;
+        font-family: $estilo__fuente--principal; color: $estilo__fuente--color;
+    }
+}

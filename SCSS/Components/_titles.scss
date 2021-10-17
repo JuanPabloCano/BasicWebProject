@@ -1,0 +1,20 @@
+/* Títulos */
+#main__title{
+    color:black;
+    font-size:2.5rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 0.625rem;
+    font-family: $estilo__fuente--mainTitle;
+
+}
+.article__text__main--title{
+    color: black;
+    font-size: 2.1875rem;
+    font-family: $estilo__fuente--secondaryTitle; text-align: center;
+}
+.article__text__secondary--title{
+    color:black;
+    font-size: 1.5625rem;
+    font-family: $estilo__fuente--secondaryTitle;
+}

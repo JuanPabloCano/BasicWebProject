@@ -1,0 +1,59 @@
+/* Estilo para el menu */
+
+.container{
+    margin: 0.938rem;
+    font-family: 'Bangers', cursive;
+}
+
+
+nav{
+    background-color: slategray;
+    border-radius: 1rem;
+    margin-right: 0rem;
+    ul{
+        align-items: center;
+        li{
+            font-size: 2rem;
+            padding: 1rem;   
+            display: inline-flex;
+            &:hover{
+                box-shadow: 0.1875rem 0.1875rem 0.3125rem black;
+                background-color:steelblue;            
+            }    
+        }
+    }
+}
+#navbarNav{
+    justify-content: center;
+}
+
+/* Estilos para los íconos de redes sociales */
+
+.header__socialNIcons{
+    display: contents;
+}
+.fa {
+    padding: 0.625rem;
+    font-size: 2.8125rem;
+    width: 1.5625rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.313rem 0.313rem ;
+    border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
