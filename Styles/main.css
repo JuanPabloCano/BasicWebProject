@@ -298,43 +298,8 @@ template {
 [hidden] {
   display: none; }
 
-/* Estilo del Grid */
-.body__grid {
-  display: grid;
-  grid-template-areas: 'header header header header'  'middle middle middle right'  'footer footer footer footer';
-  margin: 1rem; }
-
-.header {
-  grid-area: header;
-  background-color: slategrey;
-  text-align: center;
-  font-size: 2.188rem; }
-
-.middle {
-  grid-area: middle;
-  padding: 0.5rem; }
-
-.right {
-  grid-area: right;
-  padding: 0.5rem; }
-
-.footer {
-  grid-area: footer;
-  background-color: slategrey;
-  text-align: center; }
-
-/* Estilo lado derecho */
-.right__aside {
-  width: 32rem; }
-
-/* Estilo responsive */
-@media (max-width: 600px) {
-  .body__grid {
-    grid-template-areas: 'header header header header'  'middle middle middle middle'  'right right right right'  'footer footer footer footer'; } }
-
 /* Estilo para el menu */
 .container {
-  margin: 0.938rem;
   font-family: 'Bangers', cursive; }
 
 nav {
@@ -381,6 +346,19 @@ nav {
 .fa-instagram {
   background: #125688;
   color: white; }
+
+.middle {
+  padding: 3rem; }
+
+.right {
+  padding: 1rem; }
+
+.footer {
+  text-align: center;
+  background-color: slategray;
+  padding: 5rem;
+  font-family: "Bangers", cursive;
+  font-size: 3rem; }
 
 /* Estilo para los formularios */
 .article__form__container {
@@ -443,16 +421,14 @@ nav {
 
 /* Estilo para la tabla */
 .article__table {
-  background-color: black;
   width: 45rem;
   overflow: hidden; }
-
-#article__table--components thead, tbody {
-  border-collapse: collapse;
-  background-image: linear-gradient(slategray, gray);
-  border: 0.125rem solid black;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .article__table thead, .article__table tbody {
+    border-collapse: collapse;
+    background-image: linear-gradient(slategray, whitesmoke);
+    border: 0.125rem solid black;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .Precio {
   text-align: center; }
@@ -481,10 +457,6 @@ nav {
   font-size: 1.5625rem;
   font-family: "Bangers", cursive; }
 
-/* Estilo para las imágenes */
-.main__title--img {
-  margin-bottom: 2rem; }
-
 /* Estilo para los textos */
 .middle__article--textDesign {
   text-align: justify; }
@@ -492,3 +464,15 @@ nav {
     font-size: 1.25rem;
     font-family: "Spectral", serif;
     color: black; }
+
+.index__right {
+  font-size: 1.25rem;
+  margin: 2rem;
+  padding: 1rem;
+  border: black solid;
+  border-radius: 2rem;
+  background-image: linear-gradient(slategray, whitesmoke); }
+
+.carousel-item {
+  width: 25rem;
+  padding-top: 5rem; }

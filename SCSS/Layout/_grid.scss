@@ -1,51 +1,14 @@
-/* Estilo del Grid */
-.body__grid {
-    display: grid;
-    grid-template-areas: 
-    'header header header header' 
-    'middle middle middle right' 
-    'footer footer footer footer';
-    margin: 1rem;
-} 
+.middle{
+    padding: 3rem;
+}
 
-.header {
-    grid-area: header;
-    background-color:slategrey;
+.right{
+    padding: 1rem;
+}
+
+.footer{
     text-align: center;
-    font-size: 2.188rem;
-
-}
-
-.middle {
-    grid-area: middle;
-    padding: 0.5rem;
-
-}
-
-.right {
-    grid-area: right;
-    padding: 0.5rem;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: slategrey;
-    text-align: center;
-}
-
-/* Estilo lado derecho */
-
-.right__aside{
-    width: 32rem;
-}
-
-  /* Estilo responsive */
-@media (max-width: 600px) {
-    .body__grid{
-    grid-template-areas: 
-        'header header header header' 
-        'middle middle middle middle' 
-        'right right right right' 
-        'footer footer footer footer';
-    }
+    background-color: slategray;
+    padding: 5rem;
+    font-family: $estilo__fuente--secondaryTitle; font-size: 3rem;
 }

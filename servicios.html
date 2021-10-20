@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="Normalize/normalize.css">
     <link rel="stylesheet" href="Styles/main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand">
-                    <img src="https://cdn3.iconfinder.com/data/icons/rage-room-astute-vol-2/512/Rage_Room-512.png" width="80">
+                    <img src="https://cdn3.iconfinder.com/data/icons/rage-room-astute-vol-2/512/Rage_Room-512.png"
+                        width="80">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -50,123 +51,129 @@
             </div>
         </nav>
     </header>
-    <main class="body__grid">
-        <div class="middle">
-            <article class="middle__article">
-                <h1 class="article__text__main--title">
-                    Servicios y tarifas
-                </h1>
-                <div class="article__table">
-                    <table id="article__table--components">
-                        <thead>
-                            <tr>
-                                <th>Plan-pintura</th>
-                                <th>Plan-romper vidrios</th>
-                                <th>Plan-arrojar hacha</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Incluye</th>
-                                <th>Incluye</th>
-                                <th>Incluye</th>
-                            </tr>
-                            <tr>
-                                <td>-5 botes de pintura de colores variados <br>
-                                    - Traje y gafas <br>
-                                    - Pistola de pintura <br>
-                                    - Snacks <br>
-                                </td>
-                                <td>- Mazo <br>
-                                    - Traje protector y gafas <br>
-                                    - Vidrios variados (Platos, vasos, espejos, etc) <br>
-                                    - Protocolos de seguridad <br>
-                                </td>
-                                <td>- Hacha <br>
-                                    - Traje protector especial con casco y gafas <br>
-                                    - Protocolos de seguridad <br>
-                                    - Snacks <br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Valor por persona</th>
-                                <th>Valor por persona</th>
-                                <th>Valor por persona</th>
-                            </tr>
-                            <tr class="Precio">
-                                <td>45 usd</td>
-                                <td>60 usd</td>
-                                <td>30 usd</td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <div class="middle">
+        <article class="middle__article">
+            <h1 class="article__text__main--title">
+                Servicios y tarifas
+            </h1>
+            <div class="article__table">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Plan-pintura</th>
+                            <th scope="col">Plan-romper vidrios</th>
+                            <th scope="col">Plan-arrojar hacha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Incluye</td>
+                            <td>Incluye</td>
+                            <td>Incluye</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>- 5 botes de pintura de colores variados <br>
+                                - Traje y gafas <br>
+                                - Pistola de pintura <br>
+                                - Snacks <br>
+                            </td>
+                            <td>- Mazo <br>
+                                - Traje protector y gafas <br>
+                                - Vidrios variados (Platos, vasos, espejos, etc) <br>
+                                - Protocolos de seguridad <br>
+                            </td>
+                            <td>- Hacha <br>
+                                - Traje protector especial con casco y gafas <br>
+                                - Protocolos de seguridad <br>
+                                - Snacks <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <th>Valor por persona</th>
+                            <th>Valor por persona</th>
+                            <th>Valor por persona</th>
+                        </tr>
+                        <tr class="Precio">
+                            <th scope="row">4</th>
+                            <th>45 USD</th>
+                            <th>80 USD</th>
+                            <th>30 USD</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </div>
+    <div class="right">
+        <aside class="right__aside">
+            <div class="article__form">
+                <div class="article__form__container">
+                    <h2 class="article__form--title">
+                        Solicite una reserva
+                    </h2>
+                    <form target="_self" method="POST" autocomplete="on">
+
+                        <!--Bloque principal-->
+                        <label for="nombre">Nombres</label>
+                        <input type="text" name="nombre" id="nombre" class="article__form--boxes" size="50">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" class="article__form--boxes" size="50">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="article__form--boxes" size="50">
+                        <label for="telefono">Celular</label>
+                        <input type="tel" name="telefono" id="telefono" class="article__form--boxes" maxlength="10"
+                            size="11">
+
+                        <!--Selecciones-->
+                        <label for="tipoDocumento">Tipo de documento</label>
+                        <select id="tipoDocumento" class="article__form--boxes">
+                            <option value="1" label="T.I"></option>
+                            <option value="2" label="Cédula"></option>
+                            <option value="3" label="Cédula extranjería"></option>
+                        </select>
+                        <label for="NumDocument">Ingrese el número de documento</label>
+                        <input type="number" name="NumDocument" id="NumDocument" class="article__form--boxes" size="30">
+
+                        <label for="seleccion">Seleccione la opción deseada</label>
+                        <select id="seleccion" class="article__form--boxes">
+
+                            <option value="1" label="Plan-pintura"></option>
+                            <option value="2" label="Plan-romper vidrios"></option>
+                            <option value="3" label="Plan-arrojar hacha"></option>
+                        </select>
+
+                        <label for="numPersonas">Número de personas</label>
+                        <select id="numPersonas" class="article__form--boxes">
+
+                            <option value="1" label="Individual"></option>
+                            <option value="2" label="2 personas"></option>
+                            <option value="3" label="3 personas"></option>
+                            <option value="4" label="4 personas"></option>
+                            <option value="5" label="5 personas"></option>
+                        </select>
+
+                        <!--Fecha, hora de reserva y área de mensaje-->
+                        <label for="fechaHora">Fecha y hora de la reserva</label>
+                        <input type="datetime-local" name="fechaHora" id="fechaHora" class="article__form--boxes">
+
+                        <label for="mensaje">Deja aquí tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                            placeholder="Escribe algo..."></textarea>
+
+                        <!--Botones-->
+                        <div>Acepta términos y condiciones</div>
+                        <input type="checkbox" name="aceptar" value="1">
+                        <input type="submit" value="Reservar" name="submit" class="article__form--button">
+                        <input type="reset" value="Limpiar" name="reset" class="article__form--button">
+                    </form>
                 </div>
-            </article>
-        </div>          
-        <div class="right">
-            <aside class="right__aside">
-                <div class="article__form">
-                    <div class="article__form__container">
-                        <h2 class="article__form--title">
-                            Solicite una reserva
-                        </h2>
-                        <form target="_self" method="POST" autocomplete="on">
-
-                                <!--Bloque principal-->
-                            <label for="nombre">Nombres</label>
-                            <input type="text" name="nombre" id="nombre" class="article__form--boxes" size="50"> 
-                            <label for="apellidos">Apellidos</label>
-                            <input type="text" name="apellidos" id="apellidos" class="article__form--boxes" size="50"> 
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="article__form--boxes" size="50"> 
-                            <label for="telefono">Celular</label>
-                            <input type="tel" name="telefono" id="telefono" class="article__form--boxes" maxlength="10" size="11"> 
-
-                                <!--Selecciones-->
-                            <label for="tipoDocumento">Tipo de documento</label> 
-                            <select id="tipoDocumento" class="article__form--boxes">
-                                <option value="1" label="T.I"></option>
-                                <option value="2" label="Cédula"></option>
-                                <option value="3" label="Cédula extranjería"></option>
-                            </select> 
-                            <label for="NumDocument">Ingrese el número de documento</label>
-                            <input type="number" name="NumDocument" id="NumDocument" class="article__form--boxes" size="30"> 
-                            
-                            <label for="seleccion">Seleccione la opción deseada</label> 
-                            <select id="seleccion" class="article__form--boxes">
-
-                                <option value="1" label="Plan-pintura"></option>
-                                <option value="2" label="Plan-romper vidrios"></option>
-                                <option value="3" label="Plan-arrojar hacha"></option>
-                            </select> 
-
-                            <label for="numPersonas">Número de personas</label> 
-                            <select id="numPersonas" class="article__form--boxes">
-
-                                <option value="1" label="Individual"></option>
-                                <option value="2" label="2 personas"></option>
-                                <option value="3" label="3 personas"></option>
-                                <option value="4" label="4 personas"></option>
-                                <option value="5" label="5 personas"></option>
-                            </select> 
-
-                                <!--Fecha, hora de reserva y área de mensaje-->
-                            <label for="fechaHora">Fecha y hora de la reserva</label>
-                            <input type="datetime-local" name="fechaHora" id="fechaHora" class="article__form--boxes"> 
-                            
-                            <label for="mensaje">Deja aquí tu mensaje</label> 
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe algo..."></textarea>
-                            
-                            <!--Botones-->
-                            <div>Acepta términos y condiciones</div>
-                            <input type="checkbox" name="aceptar" value="1"> 
-                            <input type="submit" value="Reservar" name="submit" class="article__form--button">
-                            <input type="reset" value="Limpiar" name="reset" class="article__form--button">
-                        </form>
-                    </div>
-                </div>
-            </aside>
-        </div>
+            </div>
+        </aside>
+    </div>
     </main>
     </div>
     <div class="footer">
@@ -177,8 +184,8 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

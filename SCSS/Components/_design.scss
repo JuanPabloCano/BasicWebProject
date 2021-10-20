@@ -1,9 +1,3 @@
-/* Estilo para las imágenes */
-
-.main__title--img{
-    margin-bottom: 2rem;
-}
-
 /* Estilo para los textos */
 
 .middle__article--textDesign{
@@ -13,4 +7,18 @@
         font-size: $estilo__fuente--size;
         font-family: $estilo__fuente--principal; color: $estilo__fuente--color;
     }
+}
+
+.index__right{
+    font-size: $estilo__fuente--size;
+    margin: 2rem;
+    padding: 1rem;
+    border: black solid; border-radius: 2rem;
+    background-image: linear-gradient(slategray, whitesmoke);
+}
+
+//Tamaño de las imágenes
+.carousel-item {
+    width: $carousel__image--size;
+    padding-top: 5rem;
 }

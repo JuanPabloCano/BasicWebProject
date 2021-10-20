@@ -1,17 +1,16 @@
 /* Estilo para la tabla */
 
 .article__table{
-    background-color: black;
     width: 45rem;
     overflow: hidden;
 
-}
-#article__table--components thead, tbody{
-    border-collapse: collapse;
-    background-image: linear-gradient(slategray, gray);
-    border: 0.125rem solid black;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    thead, tbody{
+        border-collapse: collapse;
+        background-image: linear-gradient(slategray, whitesmoke );
+        border: 0.125rem solid black;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
 .Precio{
     text-align: center;
