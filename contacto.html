@@ -3,23 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Contacto</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="Normalize/normalize.css">
-    <link rel="stylesheet" href="Styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Contacto</title>
+    <meta name="description"
+        content="Somos el primer sitio de Medellín donde podrás descargar toda tu furia de manera segura, divertida y en un ambiente totalmente familiar">
+    <meta name="keywords" content="Rageroom, Estres, Romper vidrio, Quebrar cosas, Ira, Ansiedad">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand">
-                    <img src="https://cdn3.iconfinder.com/data/icons/rage-room-astute-vol-2/512/Rage_Room-512.png"
-                        width="80">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">
+                        <img src="https://cdn3.iconfinder.com/data/icons/rage-room-astute-vol-2/512/Rage_Room-512.png"
+                            width="80"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,63 +39,85 @@
                                 <a class="nav-link" href="servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="galeria.html">Galeria</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link active" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
+                </nav>
+                <div class="header__socialNIcons">
+                    <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/?hl=es" class="fa fa-instagram"></a>
+                </div>
             </div>
-            <div class="header__socialNIcons">
-                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/?hl=es" class="fa fa-instagram"></a>
-            </div>
-        </nav>
+        </div>
     </header>
-    <main class="body__grid">
-        <div class="middle">
-            <article class="middle__article">
-                <div class="article__form">
-                    <div class="article__form__container">
-                        <h2 class="article__form--title">
-                            Déjanos un mensaje! Pronto nos comunicaremos contigo
-                        </h2>
-                        <form target="_self" method="POST" autocomplete="on">
-
-                            <!--Bloque principal-->
-                            <label for="nombre">Nombres</label>
-                            <input type="text" name="nombre" id="nombre" class="article__form--boxes" size="50">
-                            <label for="apellidos">Apellidos</label>
-                            <input type="text" name="apellidos" id="apellidos" class="article__form--boxes" size="50">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="article__form--boxes" size="50">
-                            <label for="telefono">Celular</label>
-                            <input type="tel" name="telefono" id="telefono" class="article__form--boxes" maxlength="10"
-                                size="11">
-                            <label for="mensaje">Deja aquí tu mensaje</label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"
-                                placeholder="Escribe algo..."> </textarea>
-                            <input type="submit" value="Enviar" name="submit" class="article__form--button">
-                            <input type="reset" value="Limpiar" name="reset" class="article__form--button">
-                        </form>
+    <main>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="contact">
+                            <img src="https://previews.123rf.com/images/vladischern/vladischern1305/vladischern130500016/19580730-mano-que-sostiene-la-ilustraci%C3%B3n-martillo.jpg"
+                                class="img-fluid" width="500">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident modi vero ipsa quas
+                                harum
+                                voluptates itaque eaque libero reprehenderit adipisci nostrum, quaerat dignissimos,
+                                laudantium
+                                aperiam vel fugiat facilis cupiditate iste!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam placeat eligendi
+                                beatae vel
+                                eaque delectus, repudiandae maxime hic consectetur a iure sapiente ipsam expedita
+                                officia sint
+                                voluptatem cum odit?
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, repellendus accusamus
+                                odit ipsa
+                                corporis tenetur sit eum reiciendis enim tempora quos velit porro exercitationem
+                                aspernatur quam.
+                                Vero porro pariatur esse.
+                            </p>
+                        </div>
+                        <div class="form">
+                            <div class="article__form__container">
+                                <h2 class="article__form--title">
+                                    Déjanos un mensaje! Pronto nos comunicaremos contigo
+                                </h2>
+                                <form target="_self" method="POST" autocomplete="on">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="col-md-6">
+                                                <label for="nombre" class="form-label">Nombres</label>
+                                                <input type="text" class="form-control" id="Nombre">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="apellidos" class="form-label">Apellidos</label>
+                                                <input type="text" class="form-control" id="apellidos">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Deja aquí tu
+                                                    mensaje</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    cols="15" rows="5" placeholder="Escribe algo..."></textarea>
+                                                <input type="submit" value="Enviar" name="submit"
+                                                    class="btn btn-primary">
+                                                <input type="reset" value="Limpiar" name="reset"
+                                                    class="btn btn-primary">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </article>
-        </div>
-        <div class="right">
-            <aside class="right__aside">
-                <img src="#" alt="000" class="aside__img">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident modi vero ipsa quas harum
-                    voluptates itaque eaque libero reprehenderit adipisci nostrum, quaerat dignissimos, laudantium
-                    aperiam vel fugiat facilis cupiditate iste!
-                </p>
-            </aside>
-        </div>
+            </div>
+        </article>
     </main>
-    </div>
     <div class="footer">
         <footer>
             <p>

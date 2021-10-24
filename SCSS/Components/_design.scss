@@ -17,8 +17,32 @@
     background-image: linear-gradient(slategray, whitesmoke);
 }
 
+.contact{
+    margin: 1rem 5rem 1rem 5rem;
+    border: 0.5rem solid black;
+    text-align: center;
+    p{
+        margin: 1rem;
+        border: 0.5rem solid slategray; border-radius: 2rem;
+        padding: 1rem;
+        background-image: linear-gradient(grey, whitesmoke);
+        font-family: $estilo__fuente--principal; font-size: 1.5rem;
+    }
+}
 //Tamaño de las imágenes
 .carousel-item {
     width: $carousel__image--size;
     padding-top: 5rem;
+}
+
+// Fuente del lado derecho
+
+.right__text{
+    margin-top: 4rem;
+    border: black solid; border-radius: 1rem;
+    
+    p{
+        padding: 1rem;
+        font-size: 1rem;
+    }
 }

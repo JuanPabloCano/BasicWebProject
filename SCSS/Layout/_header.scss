@@ -7,8 +7,6 @@
 
 nav{
     background-color: slategray;
-    border-radius: 1rem;
-    margin-right: 0rem;
     ul{
         align-items: center;
         li{
@@ -22,6 +20,12 @@ nav{
         }
     }
 }
+
+.navbar-brand{
+    padding-left: 5rem;
+}
+
+
 #navbarNav{
     justify-content: center;
 }
@@ -29,7 +33,8 @@ nav{
 /* Estilos para los íconos de redes sociales */
 
 .header__socialNIcons{
-    display: contents;
+    display: flex; justify-content: flex-end;
+    margin-top: 1.3rem;
 }
 .fa {
     padding: 0.625rem;
